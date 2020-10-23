@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import FooterPage from './components/FooterPage';
+import Header from './components/layout/Header';
 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 
 ReactDOM.render(
  // <React.StrictMode>
     <BrowserRouter>
     <App />
+
     </BrowserRouter>,
   //</React.StrictMode>,
   document.getElementById('root')
