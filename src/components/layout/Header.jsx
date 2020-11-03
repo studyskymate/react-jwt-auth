@@ -14,6 +14,8 @@ import Profile from "../../components/profile.component";
 import Register from "../../components/register.component";
 import Login from "../../components/login.component";
 import Home from "../../components/home.component";
+import Todo from "../example/Todo";
+import AddTodos from "../example/AddTodos";
 
 
 const Header = () => {
@@ -52,6 +54,12 @@ const Header = () => {
           <li className="nav-item">
             <Link to={"/home"} className="nav-link">
               Home
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to={"/todos"} className="nav-link">
+              Todos
             </Link>
           </li>
 
@@ -121,6 +129,8 @@ const Header = () => {
           <Route path="/user" component={BoardUser} />
           <Route path="/mod" component={BoardModerator} />
           <Route path="/admin" component={BoardAdmin} />
+          <Route path="/todos" component={Todo} />
+          <Route path="/AddTodos" component={AddTodos} />
         </Switch>
       </div>
     </div>
