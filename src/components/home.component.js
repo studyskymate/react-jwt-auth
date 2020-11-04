@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 import UserService from "../services/user.service";
+import CarouselPage from "./home/CarouselPage";
 
 const Home = () => {
+
   const [content, setContent] = useState("");
+
+
 
   useEffect(() => {
     UserService.getPublicContent().then(
@@ -22,11 +26,15 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container">
+    <>
+   
+      <CarouselPage/>
+      <div className="container">
       <header className="jumbotron">
         <h3>{content}</h3>
       </header>
     </div>
+    </>
   );
 };
 

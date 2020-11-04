@@ -16,6 +16,8 @@ import Login from "../../components/login.component";
 import Home from "../../components/home.component";
 import Todo from "../example/Todo";
 import AddTodos from "../example/AddTodos";
+import Example from "../example/Example";
+import BodyExample from "../example/BodyExample";
 
 
 const Header = () => {
@@ -62,6 +64,18 @@ const Header = () => {
               Todos
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to={"/example"} className="nav-link">
+              Example
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to={"/bodyex"} className="nav-link">
+              Body Example
+            </Link>
+          </li>
+
 
           {showModeratorBoard && (
             <li className="nav-item">
@@ -131,6 +145,9 @@ const Header = () => {
           <Route path="/admin" component={BoardAdmin} />
           <Route path="/todos" component={Todo} />
           <Route path="/AddTodos" component={AddTodos} />
+          <Route path="/example" component={Example} />
+          <Route path="/bodyex" component={BodyExample} />
+          
         </Switch>
       </div>
     </div>

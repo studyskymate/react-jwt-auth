@@ -1,4 +1,5 @@
 import React from "react";
+
 import Todo from "./components/example/Todo";
 import FooterPage from "./components/layout/FooterPage";
 
@@ -12,7 +13,7 @@ return(
 <>
 
     <Header/>
-
+    
     <FooterPage/>
 </>
 )
