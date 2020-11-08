@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 import UserService from "../services/user.service";
-<<<<<<< Updated upstream
+
 import CarouselPage from "./home/CarouselPage";
-=======
+
 import Employee1 from "./Employee1";
-import Employee from "./Employee1";
->>>>>>> Stashed changes
+
+
 
 const Home = () => {
 
